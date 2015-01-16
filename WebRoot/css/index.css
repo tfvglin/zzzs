@@ -1,0 +1,361 @@
+@charset "gbk";
+.headerWrap {
+    height: 135px;
+    margin: auto;
+    width: 1000px;
+}
+.adminheaderWrap {
+    height: 135px;
+    margin: auto;
+    width: 100%;
+}
+.headerWrap .logo {
+    background: url(../images/logo.png) no-repeat scroll center center transparent;
+	float:left;
+	_display:inline;
+    height:135px;
+    width: 1000px;
+}
+.adminheaderWrap .logo {
+    background: url(../images/adminlogo.jpg) no-repeat scroll center center transparent;
+	float:left;
+	_display:inline;
+    height:135px;
+    width: 100%;
+}
+.content {
+    margin: auto;
+    width: 1000px;
+}
+.contentWrap
+{
+	padding-top:25px;
+}
+.menu {  
+width:1000px;
+padding-bottom:1px;
+}
+.adminmenu {  
+width:100%;
+padding-bottom:1px;
+}
+.menu ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+.adminmenu ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+.menu ul li{
+float:left; 
+background: url(../images/menu_bg.gif) repeat-x;
+padding:0 10px 0 10px;
+}
+.adminmenu ul li{
+float:left; 
+background: url(../images/menu_bg.gif) repeat-x;
+padding:0 10px 0 10px;
+width:9.5%;
+}
+.adminmenu ul .menu_l{ background:url(../images/menu_left.gif) no-repeat; }
+.menu ul .menu_l{ background:url(../images/menu_left.gif) no-repeat; }
+.menu ul .menu_r{ background: url(../images/menu_right1.gif) no-repeat;}
+.adminmenu ul .menu_r{ background: url(../images/menu_right1.gif) no-repeat;}
+.menu table{
+z-index:100;
+position:absolute;
+border-collapse:collapse;
+left:0;
+top:0;
+}
+.adminmenu table{
+z-index:100;
+position:absolute;
+border-collapse:collapse;
+left:0;
+top:0;
+}
+.menu a, .menu :visited,.hover a{
+color:#fff;
+text-decoration:none;
+}
+.adminmenu a, .menu :visited,.hover a{
+color:#fff;
+text-decoration:none;
+}
+.menu a em.lft, .menu :visited em.lft {
+display:block;
+float:left;
+width:3px;
+height:30px;
+}
+.adminmenu a em.lft, .menu :visited em.lft {
+display:block;
+float:left;
+width:3px;
+height:30px;
+}
+.menu a b, .menu :visited b {
+display:block;
+float:left;
+padding:0 18px;
+height:30px;
+line-height:30px;
+color:#006083;
+cursor:pointer;
+}
+.adminmenu a b, .menu :visited b {
+display:block;
+float:left;
+padding:0 18px;
+height:30px;
+line-height:30px;
+color:#006083;
+cursor:pointer;
+}
+.menu a em.rgt, .menu :visited em.rgt {
+display:block;
+float:left;
+height:30px;
+}
+.adminmenu a em.rgt, .menu :visited em.rgt {
+display:block;
+float:left;
+height:30px;
+}
+.menu :hover {
+white-space:normal;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.adminmenu :hover {
+white-space:normal;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.hover a b{
+white-space:normal;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover b {
+color:#FFFFFF;
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.adminmenu a:hover b {
+color:#FFFFFF;
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.adminmenu a:hover em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover em.rgt {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.adminmenu a:hover em.rgt {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu li:hover > a b
+{
+bcolor:#FFFFFF;
+order-bottom-color:#ccc;
+}
+.adminmenu li:hover > a b
+{
+bcolor:#FFFFFF;
+order-bottom-color:#ccc;
+}
+.menu li:hover > a em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+color:#FFFFFF;
+}
+.adminmenu li:hover > a em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+color:#FFFFFF;
+}
+.menu li:hover > a em.rgt {
+background:url(../images/menu_bg_hover.gif) repeat-x;
+border-bottom-color:#ccc;
+color:#FFFFFF;
+}
+.adminmenu li:hover > a em.rgt {
+background:url(../images/menu_bg_hover.gif) repeat-x;
+border-bottom-color:#ccc;
+color:#FFFFFF;
+}
+.column_1 {
+	float:left;
+	_display:inline;
+    width: 650px;
+}
+
+.colum_2 {
+	float:left;
+	_display:inline;
+    width:326px;
+	margin-left:20px;
+}
+
+.content h1 {
+    color: #342342;
+    font-family: 'Î¢ÈíÑÅºÚ','ºÚÌå';
+	_font-family: 'Î¢ÈíÑÅºÚ';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+	margin-top: 25px;
+	padding-left:20px;
+}
+
+.introTxt {
+    border-bottom: 1px solid #DDDDDD;
+    color: #666;
+    padding: 20px 0;
+	margin:0 20px;
+	line-height:20px;
+}
+.introTxtManage {
+    color: #666;
+    padding: 20px 0;
+	margin:0 20px;
+	line-height:20px;
+}
+.regSection
+{
+	text-align:center;
+	font-size:14px;
+	padding:40px;
+	background:url(../images/login_11.png) bottom repeat-x;
+}
+
+.regSection a
+{
+	display:inline-block;
+	padding:0 15px;
+	line-height:30px;
+	background:#da4837;
+	border:1px solid #ad665e;
+	color:#FFF;
+	font-weight:bold;
+}
+
+.regSection a:hover
+{
+	background:#ff4e00;
+}
+
+.loginSection
+{
+	background:#f2f2f2;
+	margin-top:20px;
+	font-size:14px;
+	color:#424242;
+	line-height:34px;
+}
+
+.loginSection h3 {
+    background: url(../images/login_7.jpg) no-repeat scroll 0 0 transparent;
+    color: #3b3b3b;
+	font-size: 14px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.loginSection form
+{
+	padding:10px 30px 20px 30px;
+}
+
+.loginSection form .inp
+{
+	line-height:32px;
+	border:1px solid #cecece;
+	padding:0 10px;
+	font-size:14px;
+	height:32px;
+	width:240px;
+}
+
+.loginSection form .btn
+{
+	background:#5ab6ca;
+	border:1px solid #5399a8;
+	height:30px;
+	line-height:30px;
+	padding:0 15px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.loginSection form .btnWrap
+{
+	padding:15px 0;
+}
+
+.loginSection form .btn:hover
+{
+	background:#5aa1ca;
+}
+
+.loginSection form .btnWrap a
+{
+	float:right;
+	color:#0068b9;
+	font-size:12px;
+}
+
+.loginSection form .btnWrap a:hover
+{
+	color:#333;
+	text-decoration:underline;
+}
+
+.footer
+{
+	margin: auto;
+    width: 1000px;
+	color:#9f9f9f;
+	line-height:46px;
+	zoom:1;
+}
+
+.footer a
+{
+	float:right;
+	background:url(../images/arrow.gif) no-repeat 90% 50%;
+	padding-right:15px;
+	color:#9f9f9f;
+}
+
+.footer a:hover
+{
+	text-decoration:underline;
+}
+.STYLE1 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 12px;
+}
+.STYLE2 {
+	color: #CC0000;
+}
+#content .table1 {
+	margin:0 auto;
+	padding-bottom:30px;
+	padding-top:25px;
+}

@@ -1,0 +1,53 @@
+BODY {
+	BACKGROUND-COLOR: #FCFCFC; 
+	COLOR: black; 
+	line-height: 140%;
+	font-family: "Verdana", "Tahoma", "свт╡";
+	FONT-SIZE: 13px;
+	SCROLLBAR-ARROW-COLOR: #F5D300;//свт╡свт╡свт╡свт╡
+	SCROLLBAR-BASE-COLOR:  #40364d;//свт╡лУ
+	SCROLLBAR-HIGHLIGHT-COLOR: #90869E;//свт╡свт╡свт╡свт╡свт╡
+}
+
+UL		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+LI		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+P		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+TD		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+/*TR		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}*/
+
+A:LINK		{COLOR: #3F3849; TEXT-DECORATION: none}
+A:VISITED	{COLOR: #3F3849; TEXT-DECORATION: none}
+/*A:HOVER		{COLOR: #F5D300; BACKGROUND-COLOR: #40364d}*/
+A:ACTIVE	{COLOR: #F5D300; BACKGROUND-COLOR: #40364d}
+
+FORM		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+SELECT		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; COLOR: #51485F; FONT-SIZE: 13px}
+INPUT		{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; COLOR: #51485F; FONT-SIZE: 13px}
+TEXTAREA	{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; COLOR: #51485F; FONT-SIZE: 13px}
+
+#submitrow INPUT	{BACKGROUND-COLOR:#40364d; COLOR: #f5d300; FONT-WEIGHT: bold}
+.firstalt	{BACKGROUND-COLOR: #F5FFFA}
+.secondalt	{BACKGROUND-COLOR: #F4F4F4}
+.tblhead	{BACKGROUND-COLOR: #F0F0F0; COLOR:black; FONT-SIZE:13px}
+/*.tblborder	{BACKGROUND-COLOR: #F0F0F0}*/
+#navbody 		{COLOR: black; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px; BACKGROUND-COLOR: #F8F8FF}
+#navbody TD 	{FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+#navbody A:LINK	{COLOR: black; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; FONT-SIZE: 13px}
+#navbody A:VISITED	{COLOR: #9A91AA; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"}
+#navbody A:HOVER	{COLOR: #F5D300; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; BACKGROUND-COLOR: #40364d}
+#navbody A:ACTIVE	{COLOR: #F5D300; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"; BACKGROUND-COLOR: #40364d}
+#navbody .tblhead	{COLOR: black; FONT-FAMILY: "Verdana", "Tahoma", "свт╡"}
+.gc		{COLOR: darkgreen}
+.cc		{COLOR: darkblue}
+
+.size1		{FONT-SIZE: 13px}
+.size2		{FONT-SIZE: 11pt} 
+
+.space{
+	PADDING-TOP: 2px; 
+	PADDING-BOTTOM: 2px; 
+	PADDING-LEFT: 5px; 
+	MARGIN-TOP: 2px; 
+	MARGIN-BOTTOM: 2px
+	MARGIN-LEFT: 5px
+}       

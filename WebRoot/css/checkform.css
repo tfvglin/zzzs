@@ -1,0 +1,65 @@
+
+.cachk_elem_error {
+	BORDER-RIGHT: #f00 1px solid;
+	BORDER-TOP: #f00 1px solid;
+	BORDER-LEFT: #f00 1px solid;
+	BORDER-BOTTOM: #f00 1px solid
+}
+
+.cachk_elem_reset {
+	BORDER-RIGHT: #068ec7 1px solid;
+	BORDER-TOP: #068ec7 1px solid;
+	BORDER-LEFT: #068ec7 1px solid;
+	BORDER-BOTTOM: #068ec7 1px solid
+}
+
+
+.cachk_errorsLayout {
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 5px;
+	COLOR: #f00
+}
+.cachk_errorsLayout1 {
+	color:#F00;
+	MARGIN-LEFT: 5px;
+	/*padding-left:10px;*/
+	line-height:28px;
+	font-size:12px;
+	
+}
+.cachk_initsLayout {
+	FONT-SIZE: 12px;
+	MARGIN-LEFT: 5px;
+	COLOR: #068ec7
+}
+.cachk_initsLayout1 {
+	color:#888;
+	padding:8px 0 0;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.info {
+	FONT-SIZE: 12px;
+	COLOR: #00f
+}
+.info1 {
+	
+}
+
+.STYLE1 {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: xx-large
+}
+
+.STYLE3 {
+	FONT-SIZE: 12px;
+	COLOR: #ff0000
+}
+
+.STYLE5 {
+	COLOR: #555555
+}
+
+

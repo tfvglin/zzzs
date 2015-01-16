@@ -1,0 +1,355 @@
+@charset "gbk";
+
+.content {
+    margin: auto;
+    width: 980px;
+}
+
+.content .TopPic {
+    background: url("../images/homelogo.jpg") no-repeat scroll 0 0 transparent;
+    height: 58px;
+}
+
+.contentWrap
+{
+	padding-top:25px;
+}
+
+
+.column_1 {
+	float:left;
+	_display:inline;
+    width: 634px;
+}
+
+.colum_2 {
+	float:left;
+	_display:inline;
+    width:326px;
+	margin-left:20px;
+}
+
+.column_3 {
+	float:left;
+	_display:inline;
+    width: 692px;
+}
+
+.colum_4 {
+	float:left;
+	_display:inline;
+    width:268px;
+	margin-left:20px;
+}
+
+.content h1 {
+    color: #342342;
+    font-family: 'Î¢ÈíÑÅºÚ','ºÚÌå';
+	_font-family: 'Î¢ÈíÑÅºÚ';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+	margin-top: 25px;
+	padding-left:20px;
+}
+
+.introTxt {
+    border-bottom: 1px solid #DDDDDD;
+    color: #666;
+    padding: 20px 0;
+	margin:0 20px;
+	line-height:20px;
+}
+
+.regSection
+{
+	text-align:center;
+	font-size:14px;
+	padding:40px;
+	background:url(../images/login_11.png) bottom repeat-x;
+}
+
+.regSection a ,.regbtn a  
+{
+	display:inline-block;
+	padding:0 15px;
+	line-height:30px;
+	background:#da4837;
+	border:1px solid #ad665e;
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.regbtnnew{
+	display:inline-block;
+	padding:0 15px;
+	line-height:30px;
+	background:#da4837;
+	border:1px solid #ad665e;
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+	height:32px;
+	width:108px;
+}
+
+
+.regSection a:hover ,.regbtn a:hover
+{
+	background:#ff4e00;
+}
+
+.greyregbtn a
+{
+	background:#e0e0e0;
+	color:#666;
+	border:1px solid #ccc;
+}
+
+.greyregbtn a:hover
+{
+	background:#eee;
+	color:#666;
+	border:1px solid #ccc;
+}
+
+.greyregbtn
+{
+	margin-top:15px;
+}
+
+.loginSection,.notesSection
+{
+	background:#f2f2f2;
+	margin-top:20px;
+	font-size:14px;
+	color:#424242;
+	line-height:34px;
+}
+
+.loginSection h3,.notesSection h3 {
+    background: url("../images/login_7.jpg") no-repeat scroll 0 0 transparent;
+    color: #3b3b3b;
+	font-size: 14px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.notesSection h3
+{
+    background: url("../images/login_7_1.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.notesSection p
+{
+	font-size:12px;
+	line-height:24px;
+	padding:15px 25px 25px 25px;
+	color:#666;
+}
+
+.loginSection form
+{
+	padding:10px 30px 20px 30px;
+}
+
+.loginSection form .inp,.regtable .inp
+{
+	line-height:32px;
+	border:1px solid #cecece;
+	padding:0 10px;
+	font-size:14px;
+	height:32px;
+	width:240px;
+	vertical-align:middle;
+}
+
+.loginSection form .btn,.passwordbtn .btn
+{
+	background:#5ab6ca;
+	border:1px solid #5399a8;
+	height:30px;
+	line-height:30px;
+	padding:0 15px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.loginSection form .btnWrap
+{
+	padding:15px 0;
+}
+
+.loginSection form .btn:hover ,.passwordbtn .btn:hover
+{
+	background:#5aa1ca;
+}
+
+.loginSection form .btnWrap a
+{
+	float:right;
+	color:#0068b9;
+	font-size:12px;
+}
+
+.loginSection form .btnWrap a:hover
+{
+	color:#333;
+	text-decoration:underline;
+}
+
+
+.regtable 
+{
+	font-size:14px;
+	color:#222;
+	padding:20px 10px 40px 10px;
+	border-top:1px solid #ccc;
+	margin:20px;
+	background:url(../images/login_11.png) bottom repeat-x;
+}
+
+.regtable .item{
+	padding:10px;
+}
+
+.regtable .item .txt
+{
+	float:left;
+	_display:inline;
+	width:120px;
+	color:#000;
+	padding:5px 10px 0 0;
+}
+
+.regtable .item .form
+{
+	float:left;
+	_display:inline;
+	width:450px;
+}
+
+.regtable .item .info
+{
+	color:#888;
+	padding:8px 0 0;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;;
+}
+
+.regtable .important
+{
+	color:#ff6c00;
+}
+
+.regtable .item .alert
+{
+	border:1px solid #F00;
+}
+
+.regtable .item .warn
+{
+	color:#F00;
+	padding-left:10px;
+	line-height:28px;
+	font-size:12px;
+}
+
+
+.regtable .alternativeitem
+{
+	background:#f7f7f7;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+
+.regtable .getpassword
+{
+	width:600px;
+	margin:auto
+}
+
+.regtable .tips {
+	padding:10px 10px;
+	border-bottom:1px solid #ccc;
+	font-size:12px;
+	margin-bottom:20px;
+}
+
+.regtable .message
+{
+	width:300px;
+	margin:auto;
+}
+
+.regtable .message .ico
+{
+	background:url(../images/messageicon.png) no-repeat;
+	width:36px;
+	height:36px;
+	float:left;
+	_display:inline;
+	margin-top:5px;
+}
+
+.regtable .message  .correct
+{
+	background-position:-1px -1px;
+}
+
+.regtable .message  .err
+{
+	background-position:-1px -373px;
+}
+
+.regtable .message .txt
+{
+	margin-left:60px;
+	height:120px;
+	line-height:20px;
+	font-size:12px;
+}
+
+
+.regtable .message .txt h2
+{
+	font-size:18px;
+	font-weight:normal;
+    font-family: 'Î¢ÈíÑÅºÚ','ºÚÌå';
+	_font-family: 'Î¢ÈíÑÅºÚ';
+	color:#ff7200;
+	line-height:24px;
+	padding-bottom:8px;
+}
+
+
+.footer
+{
+	margin: auto;
+    width: 980px;
+	color:#9f9f9f;
+	line-height:46px;
+	zoom:1;
+}
+
+.footer a
+{
+	float:right;
+	background:url(../images/arrow.gif) no-repeat 90% 50%;
+	padding-right:15px;
+	color:#9f9f9f;
+}
+
+.footer a:hover
+{
+	text-decoration:underline;
+}
+

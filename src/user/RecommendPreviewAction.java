@@ -1,0 +1,113 @@
+package user;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class RecommendPreviewAction extends ActionSupport{
+	@Override
+	public String execute() throws Exception
+	{
+		ActionContext ctx=ActionContext.getContext();
+		HttpServletRequest request = ServletActionContext.getRequest();
+		user.Service userService=new user.Service();
+		String IDcard=userService.getIDcard((String)ctx.getSession().get("email"));
+		request.setAttribute("idcard", IDcard);
+		String Name=userService.getName("zsb_recommend",IDcard);
+		String Sex=userService.getSex("zsb_recommend",IDcard);
+		String Nation=userService.getNation("zsb_recommend",IDcard);
+		String Province=userService.getProvince("zsb_recommend",IDcard);
+		String Birthday=userService.getBirthday("zsb_recommend",IDcard);
+		String Politic=userService.getPolitic("zsb_recommend",IDcard);
+		String EntranceNo=userService.getEntranceNo("zsb_recommend",IDcard);
+		String IsYingjie=userService.getIsYingjie("zsb_recommend",IDcard);
+		String Subject=userService.getSubject("zsb_recommend",IDcard);
+		request.setAttribute("username", Name);
+		request.setAttribute("sex", Sex);
+		request.setAttribute("nation", Nation);
+		request.setAttribute("province", Province);
+		request.setAttribute("birthday", Birthday);
+		request.setAttribute("politic", Politic);
+		request.setAttribute("entranceno", EntranceNo);
+		request.setAttribute("isyingjie", IsYingjie);
+		request.setAttribute("subject", Subject);
+		String Mobile=userService.getMobile("zsb_recommend",IDcard);
+		String FirstRelation=userService.getFirstRelation("zsb_recommend",IDcard);
+		String HighSchool=userService.getHighSchool("zsb_recommend",IDcard);
+		String Project=userService.getProject("zsb_recommend",IDcard);
+		String Height=userService.getHeight("zsb_recommend",IDcard);
+		request.setAttribute("mobile", Mobile);
+		request.setAttribute("firstrelation", FirstRelation);
+		request.setAttribute("highschool", HighSchool);
+		request.setAttribute("specialty", Project);
+		request.setAttribute("height", Height);
+		String Photo=userService.getPhoto(IDcard);
+		request.setAttribute("photo", Photo);
+		String Level=userService.getLevel("zsb_recommend",IDcard);
+		request.setAttribute("level", Level);
+		String getTime=userService.getGetTime("zsb_recommend",IDcard);
+		request.setAttribute("gettime", getTime);
+		String HighLink=userService.getHighLink("zsb_recommend",IDcard);
+		request.setAttribute("highlink", HighLink);
+		String HighDepartment=userService.getHighDepartment("zsb_recommend",IDcard);
+		request.setAttribute("highdepartment", HighDepartment);
+		String HighTel=userService.getHighLinkTel("zsb_recommend",IDcard);
+		request.setAttribute("hightel", HighTel);
+		String HighAddress=userService.getHighAddress("zsb_recommend",IDcard);
+		request.setAttribute("highaddress", HighAddress);
+		String HighPost=userService.getHighPost("zsb_recommend",IDcard);
+		request.setAttribute("highpost", HighPost);
+		String Address=userService.getAddress("zsb_recommend",IDcard);
+		request.setAttribute("homeaddress", Address);
+		String Post=userService.getPost("zsb_recommend",IDcard);	
+		request.setAttribute("homepost", Post);
+		String Tel=userService.getTel("zsb_recommend",IDcard);
+		request.setAttribute("hometel", Tel);
+		String FirstName=userService.getFirstName("zsb_recommend",IDcard);
+		request.setAttribute("firstname", FirstName);
+		String FirstUnit=userService.getFirstUnit("zsb_recommend",IDcard);
+		request.setAttribute("firstunit", FirstUnit);
+		String FirstEdu=userService.getFirstEdu("zsb_recommend",IDcard);
+		request.setAttribute("firstedu", FirstEdu);
+		String FirstTel=userService.getFirstTel("zsb_recommend",IDcard);
+		request.setAttribute("firsttel", FirstTel);
+		String SecondRelation=userService.getSecondRelation("zsb_recommend",IDcard);
+		request.setAttribute("secondrelation", SecondRelation);
+		String SecondName=userService.getSecondName("zsb_recommend",IDcard);
+		request.setAttribute("secondname", SecondName);
+		String SecondUnit=userService.getSecondUnit("zsb_recommend",IDcard);
+		request.setAttribute("secondunit", SecondUnit);
+		String SecondEdu=userService.getSecondEdu("zsb_recommend",IDcard);
+		request.setAttribute("secondedu", SecondEdu);
+		String SecondTel=userService.getSecondTel("zsb_recommend",IDcard);
+		request.setAttribute("secondtel", SecondTel);
+		String HighBegin=userService.getHighBegin("zsb_recommend",IDcard);
+		request.setAttribute("highbegin", HighBegin);
+		String HighEnd=userService.getHighEnd("zsb_recommend",IDcard);
+		request.setAttribute("highend", HighEnd);
+		String MidSchool=userService.getMidSchool("zsb_recommend",IDcard);
+		request.setAttribute("midschool", MidSchool);
+		String MidBegin=userService.getMidBegin("zsb_recommend",IDcard);
+		request.setAttribute("midbegin", MidBegin);
+		String MidEnd=userService.getMidEnd("zsb_recommend",IDcard);
+		request.setAttribute("midend", MidEnd);
+		String MidLink=userService.getMidLink("zsb_recommend",IDcard);
+		request.setAttribute("midlink", MidLink);
+		String Strength=userService.getStrength("zsb_recommend",IDcard);
+		request.setAttribute("strength", Strength);	
+		String Awards=userService.getAwards("zsb_recommend",IDcard);
+		request.setAttribute("awards", Awards);	
+		String Year=userService.getYear();
+		request.setAttribute("year", Year);	
+		String End=userService.getEnd("±£ËÍÉú");
+		request.setAttribute("end", End);	
+		String Status=userService.getStatus(IDcard);
+		request.setAttribute("status", Status);	
+		String Number=userService.getNumber("zsb_recommend",IDcard);
+		request.setAttribute("number", Number);	
+		return SUCCESS;
+	}
+}

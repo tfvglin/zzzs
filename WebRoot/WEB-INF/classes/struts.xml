@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- 指定Struts 2配置文件的根元素 -->
+<struts>
+	<!-- 指定全局国际化资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="mess"/>
+	<!-- 指定国际化编码所使用的字符集 -->	
+	<constant name="struts.i18n.encoding" value="GBK"/>
+	<package name="user" extends="struts-default">
+	    <!-- 提交注册信息 -->			
+		<action name="regSubmit" class="user.RegistAction">
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/png,image/gif,image/jpeg</param>
+				<param name="maximumSize">30000</param> 
+			</interceptor-ref> 
+			<interceptor-ref name="defaultStack"/>
+			<param name="savePath">/upload</param>
+			<result name="input">/home/regedit.jsp</result>
+	        <result name="stu">/home/welcome.jsp</result>
+	        <result name="error">/home/regedit.jsp</result>
+		</action>		
+		<!-- 考生登陆 -->
+		<action name="userLogin" class="user.LoginAction">
+			<result name="input">/index.jsp</result>
+	        <result name="stu">/home/index.jsp</result>
+	        <result name="error">/index.jsp</result>
+		</action>
+		<!-- 考生找回密码 -->
+		<action name="subFindPassword" class="user.subFindPasswordAction">
+			<result name="input">/home/findpassword.jsp</result>
+	        <result>/common/message.jsp</result>
+	        <result name="error">/home/findpassword.jsp</result>
+		</action>
+		<!-- 考生修改密码 -->
+		<action name="changePassword" class="user.changePasswordAction">
+			<result name="input">/home/password.jsp</result>
+	        <result>/index.jsp</result>
+	        <result name="error">/home/password.jsp</result>
+		</action>
+		<!-- 考生退出 -->
+		<action name="logout" class="user.logoutAction">
+	        <result>/index.jsp</result>
+		</action>
+		<!-- 获取招生类别 -->
+		<action name="getSignup" class="user.SignupAction">
+	        <result>/home/release.jsp</result>
+		</action>
+		<!-- 获取高水平运动员申请表信息 -->
+		<action name="getAthlete" class="user.AthleteAction">
+	        <result>/home/athletepersonal.jsp</result>
+		</action>
+		<!-- 提交高水平运动员个人信息 -->
+		<action name="subAthletePersonal" class="user.AthletePersonalAction">
+			<result name="input">/home/athletepersonal.jsp</result>
+	        <result>/home/athletecontact.jsp</result>
+	        <result name="error">/home/athletepersonal.jsp</result>
+		</action>
+		<!-- 获取高水平运动员联系方式 -->
+		<action name="getAthleteContact" class="user.getAthleteContact">
+			<result>/home/athletecontact.jsp</result>
+		</action>
+		<!-- 提交高水平运动员联系方式 -->
+		<action name="subAthleteContact" class="user.AthleteContactAction">
+			<result name="input">/home/athletecontact.jsp</result>
+	        <result>/home/athleterelation.jsp</result>
+	        <result name="error">/home/athletecontact.jsp</result>
+		</action>
+		<!-- 获取高水平运动员家庭情况 -->
+		<action name="getAthleteRelation" class="user.getAthleteRelation">
+			<result>/home/athleterelation.jsp</result>
+		</action>
+		<!-- 提交高水平运动员家庭情况 -->
+		<action name="subAthleteRelation" class="user.AthleteRelationAction">
+			<result name="input">/home/athleterelation.jsp</result>
+	        <result>/home/athleteschool.jsp</result>
+	        <result name="error">/home/athleterelation.jsp</result>
+		</action>
+		<!-- 获取高水平运动员中学信息 -->
+		<action name="getAthleteSchool" class="user.getAthleteSchool">
+			<result>/home/athleteschool.jsp</result>
+		</action>
+		<!-- 提交高水平运动员中学信息 -->
+		<action name="subAthleteSchool" class="user.AthleteSchoolAction">
+			<result name="input">/home/athleteschool.jsp</result>
+	        <result>/home/athletespecialty.jsp</result>
+	        <result name="error">/home/athleteschool.jsp</result>
+		</action>
+		<!-- 获取高水平运动员专业志愿-->
+		<action name="getAthleteSpecialty" class="user.getAthleteSpecialty">
+			<result>/home/athletespecialty.jsp</result>
+		</action>
+		<!-- 提交高水平运动员专业志愿 -->
+		<action name="subAthleteSpecialty" class="user.AthleteSpecialtyAction">
+			<result name="input">/home/athletespecialty.jsp</result>
+	        <result>/home/athleteappend.jsp</result>
+	        <result name="error">/home/athletespecialty.jsp</result>
+		</action>
+		<!-- 获取高水平运动员附加信息-->
+		<action name="getAthleteAppend" class="user.getAthleteAppend">
+			<result>/home/athleteappend.jsp</result>
+		</action>
+		<!-- 提交高水平运动员附加信息 -->
+		<action name="subAthleteAppend" class="user.AthleteAppendAction">
+			<result name="input">/home/athleteappend.jsp</result>
+	        <result>/home/athlete.jsp</result>
+	        <result name="error">/home/athleteappend.jsp</result>
+		</action>
+		<!-- 预览高水平运动员申请表 -->
+		<action name="previewAthlete" >
+	        <result>/home/previewathlete.jsp</result>
+		</action>
+		<!-- 获取高水平运动员申请表 -->
+		<action name="getAthletePreview" class="user.AthletePreviewAction">
+	        <result>/home/printathlete.jsp</result>
+		</action>
+		<!-- 确认提交高水平运动员申请表 -->
+		<action name="confirmAthlete" class="user.ConfirmAthleteAction">
+	        <result>/home/athlete.jsp</result>
+		</action>
+		<!-- 打印高水平运动员申请表 -->
+		<action name="printAthlete"  class="user.AthletePreviewAction">
+	        <result>/home/previewathlete.jsp</result>
+		</action>
+		<!-- 查询高水平运动员申请资料是否寄达 -->
+		<action name="getIfAthleteReceive"  class="user.IfAthleteReceiveAction">
+	        <result>/common/message.jsp</result>
+		</action>	
+		<!-- 查询高水平运动员初审结果 -->
+		<action name="getAthleteTrial"  class="user.getAthleteTrial">
+	        <result>/common/message.jsp</result>
+		</action>
+		<!-- 打印高水平运动员准考证 -->
+		<action name="printAthleteAdmission"  class="user.printAthleteAdmissionAction">
+	        <result>/home/athleteadmission.jsp</result>
+		</action>
+		
+		
+		
+		<!-- 获取保送生申请表信息 -->
+		<action name="getRecommend" class="user.RecommendAction">
+	        <result>/home/recommendpersonal.jsp</result>
+		</action>
+		<!-- 提交保送生个人信息 -->
+		<action name="subRecommendPersonal" class="user.RecommendPersonalAction">
+			<result name="input">/home/recommendpersonal.jsp</result>
+	        <result>/home/recommendcontact.jsp</result>
+	        <result name="error">/home/recommendpersonal.jsp</result>
+		</action>
+		<!-- 获取保送生联系方式 -->
+		<action name="getRecommendContact" class="user.getRecommendContact">
+			<result>/home/recommendcontact.jsp</result>
+		</action>
+		<!-- 提交保送生联系方式 -->
+		<action name="subRecommendContact" class="user.RecommendContactAction">
+			<result name="input">/home/recommendcontact.jsp</result>
+	        <result>/home/recommendrelation.jsp</result>
+	        <result name="error">/home/recommendcontact.jsp</result>
+		</action>
+		<!-- 获取保送生家庭情况 -->
+		<action name="getRecommendRelation" class="user.getRecommendRelation">
+			<result>/home/recommendrelation.jsp</result>
+		</action>
+		<!-- 提交保送生家庭情况 -->
+		<action name="subRecommendRelation" class="user.RecommendRelationAction">
+			<result name="input">/home/recommendrelation.jsp</result>
+	        <result>/home/recommendschool.jsp</result>
+	        <result name="error">/home/recommendrelation.jsp</result>
+		</action>
+		<!-- 获取保送生中学信息 -->
+		<action name="getRecommendSchool" class="user.getRecommendSchool">
+			<result>/home/recommendschool.jsp</result>
+		</action>
+		<!-- 提交保送生中学信息 -->
+		<action name="subRecommendSchool" class="user.RecommendSchoolAction">
+			<result name="input">/home/recommendschool.jsp</result>
+	        <result>/home/recommendspecialty.jsp</result>
+	        <result name="error">/home/recommendschool.jsp</result>
+		</action>
+		<!-- 获取保送生专业志愿-->
+		<action name="getRecommendSpecialty" class="user.getRecommendSpecialty">
+			<result>/home/recommendspecialty.jsp</result>
+		</action>
+		<!-- 提交保送生专业志愿 -->
+		<action name="subRecommendSpecialty" class="user.RecommendSpecialtyAction">
+			<result name="input">/home/recommendspecialty.jsp</result>
+	        <result>/home/recommendappend.jsp</result>
+	        <result name="error">/home/recommendspecialty.jsp</result>
+		</action>
+		<!-- 获取保送生附加信息-->
+		<action name="getRecommendAppend" class="user.getRecommendAppend">
+			<result>/home/recommendappend.jsp</result>
+		</action>
+		<!-- 提交保送生附加信息 -->
+		<action name="subRecommendAppend" class="user.RecommendAppendAction">
+			<result name="input">/home/recommendappend.jsp</result>
+	        <result>/home/recommend.jsp</result>
+	        <result name="error">/home/recommendappend.jsp</result>
+		</action>
+		<!-- 预览保送生申请表 -->
+		<action name="previewRecommend" >
+	        <result>/home/previewrecommend.jsp</result>
+		</action>
+		<!-- 获取保送生申请表 -->
+		<action name="getRecommendPreview" class="user.RecommendPreviewAction">
+	        <result>/home/printrecommend.jsp</result>
+		</action>
+		<!-- 确认提交保送生申请表 -->
+		<action name="confirmRecommend" class="user.ConfirmRecommendAction">
+	        <result>/home/recommend.jsp</result>
+		</action>
+		<!-- 打印保送生申请表 -->
+		<action name="printRecommend"  class="user.RecommendPreviewAction">
+	        <result>/home/previewrecommend.jsp</result>
+		</action>
+		<!-- 查询保送生申请资料是否寄达 -->
+		<action name="getIfRecommendReceive"  class="user.IfRecommendReceiveAction">
+	        <result>/common/message.jsp</result>
+		</action>	
+		<!-- 查询保送生初审结果 -->
+		<action name="getRecommendTrial"  class="user.getRecommendTrial">
+	        <result>/common/message.jsp</result>
+		</action>
+		<!-- 打印保送生准考证 -->
+		<action name="printRecommendAdmission"  class="user.printRecommendAdmissionAction">
+	        <result>/home/recommendadmission.jsp</result>
+		</action>
+		
+		
+		
+		
+		
+				
+		<action name="*">
+		    <result>/home/{1}.jsp</result>	
+	    </action>	
+	</package>
+	<package name="admin" extends="struts-default">	    
+		<action name="adminLogin">
+			<result>/admin/login.jsp</result>	
+		</action>
+		<!-- 管理员登陆 -->
+		<action name="subAdminLogin" class="admin.LoginAction">
+			<result name="input">/admin/login.jsp</result>
+	        <result name="admin">/admin/index.jsp</result>
+	        <result name="error">/admin/login.jsp</result>
+		</action>	
+		<!-- 管理员退出 -->
+		<action name="adminLogout" class="admin.Logout">
+	        <result>/admin/login.jsp</result>
+		</action>	
+		<!-- 获取统计信息 -->
+		<action name="getInfo" class="admin.getInfoAction">
+	        <result>/admin/info.jsp</result>
+		</action>
+		<!-- 进入招生类别管理页面 -->
+		<action name="getRelease" class="admin.getReleaseAction">
+	        <result>/admin/release.jsp</result>
+		</action>
+		<!-- 发布招生类别 -->
+		<action name="subRelease" class="admin.SubRelease">
+			<result name="input">/admin/release.jsp</result>
+	        <result name="admin">/admin/release.jsp</result>
+	        <result name="error">/admin/release.jsp</result>
+		</action>
+		<!-- 编辑招生类别 -->
+		<action name="editRelease" class="admin.editRelease">
+			<result>/admin/editrelease.jsp</result>
+		</action>
+		<!--提交编辑招生类别 -->
+		<action name="subEditRelease" class="admin.subEditRelease">
+			<result>/admin/release.jsp</result>
+		</action>
+		<!--删除招生类别 -->
+		<action name="delRelease" class="admin.delRelease">
+			<result>/admin/release.jsp</result>
+		</action>
+		<!-- 注册账号管理 -->
+		<action name="regList"  class="admin.regList">
+	        <result>/admin/account.jsp</result>
+		</action>
+		<!-- 注册账号查找 -->
+		<action name="searchAccount"  class="admin.searchAccount">
+	        <result>/admin/searchAccount.jsp</result>
+		</action>
+		<!-- 注册邮箱更改 -->
+		<action name="subEmail"  class="admin.subEmail">
+	        <result>/admin/searchAccount.jsp</result>
+		</action>
+		<!-- 注册账号删除 -->
+		<action name="delAccount"  class="admin.delAccount">
+	        <result>/admin/account.jsp</result>
+		</action>
+		<!-- 获取高水平运动员列表 -->
+		<action name="getAthletes"  class="admin.getAthletesAction">
+	        <result>/admin/athlete.jsp</result>
+		</action>		
+		<!-- 查找高水平运动员 -->
+		<action name="searchAthlete"   class="admin.searchAthlete">
+	        <result>/admin/searchAthlete.jsp</result>
+		</action>
+		<!-- 查看高水平运动员 -->
+		<action name="athleteDetail"  class="admin.athleteDetail">
+	        <result>/admin/athleteDetail.jsp</result>
+		</action>
+		<!-- 转入高水平运动员更新状态页面 -->
+		<action name="athletestatus" >
+	        <result>/admin/athletestatus.jsp</result>
+		</action>		
+		<!-- 提交高水平运动员更新状态 -->
+		<action name="subAthleteStatus"  class="admin.subAthleteStatusAction">
+	        <result>/admin/searchAthlete.jsp</result>
+		</action>
+		<!-- 删除高水平运动员 -->
+		<action name="delAthlete"  class="admin.delAthlete">
+	        <result>/admin/athlete.jsp</result>
+		</action>
+		<!-- 导出高水平运动员统计表 -->
+		<action name="exportAthlete"  class="admin.exportAthlete">
+	        <result>/admin/athleteExcel.jsp</result>
+		</action>
+		<!-- 导出高水平运动员考核结果 -->
+		<action name="importAthlete"  class="admin.importAthlete">
+	        <result>/admin/athlete.jsp</result>
+		</action>
+		<!-- 获取高水平运动员准考证所需信息 -->
+		<action name="getAthleteAdmission"  class="admin.getAthleteAdmissionAction">
+	        <result>/admin/athleteadmission.jsp</result>
+		</action>
+		<!-- 提交高水平运动员准考证信息 -->
+		<action name="subAthleteAdmission"  class="admin.subAthleteAdmissionAction">
+	        <result>/common/message.jsp</result>
+		</action>
+		<!-- 发放高水平运动员准考证 -->
+		<action name="grantAthlete"  class="admin.grantAthleteAction">
+	        <result>/common/message.jsp</result>
+		</action>
+		<!-- 保送生管理 -->
+		<action name="recommendList"  class="admin.recommendList">
+	        <result>/admin/recommend.jsp</result>
+		</action>
+		<!-- 自主招生管理 -->
+		<action name="selfList"  class="admin.selfList">
+	        <result>/admin/self.jsp</result>
+		</action>
+		<!-- 获取已有考场 -->
+		<action name="getRooms"  class="admin.getRoomsAction">
+	        <result>/admin/room.jsp</result>
+		</action>		
+	</package>	
+</struts>

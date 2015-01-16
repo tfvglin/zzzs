@@ -1,0 +1,182 @@
+@charset "utf-8";
+/***************
+TsingStone Info&Art Design Studio
+the Academy of Arts & Design, Tsinghua University
+Author:Jason Woo 
+***************/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,figcaption,code,del,dfn,em,image,q,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,tf,tr,th {
+	border: 0px;
+	padding: 0px; 
+	font-size: 100%; 	
+	-webkit-text-size-adjust:none;
+	margin:0 auto; 
+	font-family: inherit; 
+}
+.headerWrap {
+    height: 135px;
+    margin: auto;
+    width: 100%;
+}
+
+.headerWrap .logo {
+    background: url("../images/homelogo.jpg") no-repeat scroll center center transparent;
+	float:left;
+	_display:inline;
+    height: 135px;
+    width: 100%;
+}
+.menu {  
+width:1222px;
+padding-bottom:1px;
+}
+.menu ul{
+list-style-type:none;
+padding:0;
+margin:0;
+width:1222px;
+}
+.menu ul li{
+float:left; 
+background: url(../images/menu_bg.gif) repeat-x;
+width:11.1%;
+}
+.menu ul .menu_l{ background:url(../images/menu_left.gif) no-repeat; }
+.menu ul .menu_r{ background: url(../images/menu_right1.gif) no-repeat;}
+.menu table{
+z-index:100;
+position:absolute;
+border-collapse:collapse;
+left:0;
+top:0;
+}
+.menu a, .menu :visited,.hover a{
+color:#fff;
+text-decoration:none;
+}
+.menu a em.lft, .menu :visited em.lft {
+display:block;
+float:left;
+width:3px;
+height:30px;
+}
+.menu a b, .menu :visited b {
+display:block;
+float:left;
+padding:0 18px;
+height:30px;
+line-height:30px;
+color:#006083;
+cursor:pointer;
+}
+.menu a em.rgt, .menu :visited em.rgt {
+display:block;
+float:left;
+height:30px;
+}
+.menu :hover {
+white-space:normal;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.hover a b{
+white-space:normal;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover b {
+color:#FFFFFF;
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+}
+.menu a:hover em.rgt {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+
+}
+.menu li:hover > a b
+{
+bcolor:#FFFFFF;
+order-bottom-color:#ccc;
+}
+.menu li:hover > a em.lft {
+border-bottom-color:#ccc;
+background:url(../images/menu_bg_hover.gif) repeat-x;
+color:#FFFFFF;
+}
+.menu li:hover > a em.rgt {
+background:url(../images/menu_bg_hover.gif) repeat-x;
+border-bottom-color:#ccc;
+color:#FFFFFF;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #333;
+	line-height: 18px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+
+input,textarea,select
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	outline:none;
+}
+
+img {
+	border: 0px;
+	vertical-align:bottom;
+}
+
+a, a:link {
+	text-decoration: none;
+	color:#06F;
+}
+
+a:hover
+{
+	text-decoration:none;
+	color:#C30;
+}
+
+ul, li {
+	list-style-type:none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.clearfix:after {
+	display:block;
+	content:'.';
+	clear:both;
+	width:900px;
+	height:0px;
+	visibility: hidden;
+}
+
+.yahei{
+	font-family:"Microsoft yahei","微软雅黑","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.relative
+{
+	position:relative;
+}
+
+.clearfix {
+*display:inline-block;
+*zoom:1;
+}
+#homeIndexTable{
+	margin-left:-1222px;
+	padding-left:-1222px;
+}
